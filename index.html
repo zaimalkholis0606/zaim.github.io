@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web | Rifqy Shilahuddin</title>
+</head>
+<body>
+        <div class="container">
+        <div class="sidebar">
+            <img src="img/unpam.png" alt="">
+            <nav>            
+                <ul> 
+                    <li class="nav-item">
+                    <a class="nav-link" href="#MENAMPILKAN GAMBAR, SUARA DAN VIDEO">DAFTAR ISI</a>
+                  </li>           
+                    <li class="nav-item">
+                        <a class="nav-link" href="#MENAMPILKAN GAMBAR, SUARA DAN VIDEO">MENAMPILKAN GAMBAR, SUARA DAN VIDEO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Gambar">1. Menampilkan Gambar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Suara">2. Menampilkan Suara</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Video">3. Menampilkan Video</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#HYPERLINK">HYPERLINK</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#relative">1. Link relative</a>
+                      </li>    
+                      <li class="nav-item">
+                        <a class="nav-link" href="#absolute">2. Link absolute</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#halaman">3. Link pada halaman yang sama (link Anchor)</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#email">4. Link Email</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kesimpulan">Kesimpulan</a>
+                          </li>
+                      </li>
+
+                </ul>
+            </nav>
+        </div>
+
+    <!-- AWAL MENAMPILKAN GAMBAR, SUARA DAN VIDEO-->
+        <section id="MENAMPILKAN GAMBAR, SUARA DAN VIDEO">
+        <main class="content">
+              <section class="hero">                
+              <div class="hero-content">              
+              <img src="img/caver.JPG" width= "1300" height ="500" Alt="mycaver" allign="center" title="caver">
+                <h1>MENAMPILKAN GAMBAR, SUARA DAN VIDEO DI HTML</h1></h2>Tanggal, 19 Maret 2022 | Created by: Rifqy Shilahuddin  | NIM  : 181011400470, Kelas: 05TPLM002 | Tugas: Pemrograman Web 1 Pertemuan 4 </h2>
+                <h2><section id="Gambar">1. Menampilkan Gambar</section></h2>
+                <p>Dalam dokumen HTML ekstension file image yang digunakan gif, jpeg, pcx, png, wmf, dan bmp, tetapi browser lebih banyak menerima untuk file gambar yang berakhiran gif dan jpg.</p>
+                <img src="img/Capture1.JPG" width=900 height=110 alt="gambarku">
+                <p>src : nama file gambar</p>
+                <p>Height : tinggi gambar</p>
+                <p>Width : lebar gambar</p>
+                <p>Align : mengatur letak image terhadap teks</p>
+                <p>(top| bottom| middle| left| right|center)</p>
+                <p>Alt : menampilkan teks pada saat image tidak dapat tampil</p>
+                <p>Border : garis tepi gambar</p>
+                <p>Contoh :</br>
+                <p>< img src="image/me.jpg" width=125 height=150 border=2 alt="my picture" title="Taj'Mahal"></p>  
+                <p>Hasilnya :</p>
+                <img src="img/me.png" width=125 height=150 border=2 alt="my picture" title="Taj'Mahal">
+                <p>Gambar 12 Hasil tampilan tag image</p>
+                <p>Attribut image tidak semua harus dituliskan tergantung kebutuhan. Sebaiknya 
+                    gambar yang akan ditampilkan berukuran real, sesuai dengan ukuran aslinya 
+                    sehingga tidak perlu mengatur height dan widthnya serta berakhiran .gif.</p>
+                <h2>Menampilkan Image Map</h2>
+                <p>Tag < map> digunakan untuk mendefinisikan peta gambar di sisi klien. Peta gambar adalah  gambar dengan area yang dapat diklik.</p>
+                <p>Contoh penggunaan Map</p>
+                <p>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"></p>
+                <p>< HTML></p>
+                <p>< HEAD></p>
+                <p>< TITLE> New Document </ TITLE></p>
+                <p>< META NAME="Generator" CONTENT="EditPlus"></p>
+                <p>< META NAME="Author" CONTENT=""></p>
+                <p>< META NAME="Keywords" CONTENT=""></p>
+                <p>< META NAME="Description" CONTENT=""></p>
+                <p>< /HEAD></p>
+                <p>< BODY></p>
+                <p>< p> Klik pada bagian atau area gambar sesuai dengan koordinat map yang telah ditentukan< /p></p>
+                <p>< img src="image/me.jpg" width=145 height=126 alt="gambarku" usemap="#picturemap"></p>
+                <p>< map name=picturemap>< /map></p>
+                <p>< area shape=rect coords="0,0,82,126" href="a.htm" title=bagianA></p>
+                <p>< area shape=circle coords="90,58,3" href="b.htm" alt=bagianB></p>
+                <p>< area shape=circle coords="124,58,8" href="c.htm" alt=bagianC></p>
+                <p>< /map></p>
+                <p>< /BODY></p>
+                <p>< /HTML></p>                
+                <p>Tampilan browser :</p>                
+                <p> Klik pada bagian atau area gambar sesuai dengan koordinat map yang telah ditentukan</p>
+                <img src="img/me.png" width=145 height=126 alt="gambarku" usemap="#picturemap">
+                <map name=picturemap>
+                <area shape=rect coords="0,0,82,126" href="me.png" title=bagianA>
+                <area shape=circle coords="90,58,3" href="me.png" alt=bagianB>
+                <area shape=circle coords="124,58,8" href="me.png" alt=bagianC>
+                </map>
+                <p>Hasilnya :</p>
+                <img src="img/Capture2.JPG" width=900 height=500 alt="gambarku">
+                <p>Gambar 13 Tampilan image map</p>
+                <h2><section id="Suara">2. Menampilkan Suara</section></h2>
+                <p>Perintah untuk menampilkan suara pada halaman web menggunakan embed 
+                    atau bgsound. Extension file suara yang digunakan adalah : .mp3,.wav, .mid, dan 
+                    .au.</p>
+                <img src="img/Capture4.JPG" width=800 height=110 alt="gambarku"> 
+                <p>Contoh :</p>
+                <p>< embed src="music/davesite.mp3" loop="true" autoplay="false" width="145" 
+                    height="60">< /embed></p>
+                <p>Set Autoplay=”true” maka secara langsung file dijalankan ketika web 
+                    ditampilkan, akan tetapi jika set autoplay=”false“ maka file tidak dijalan secara 
+                    langsung melainkan harus menekan tombol play terlebih dahulu. Kotak tombol 
+                    kontrol pun dapat ditampilkan dan disembunyikan dengan mengatur atribut hidden
+                    =”true” atau “false”. Jika hidden bernilai true maka tombol kontrol disembunyikan 
+                    jika hidden=”false” maka tombol kontrol ditampilkan. Musik atau suara dapat 
+                    diputar secara terus menerus atau mengulang kembali dengan mengatur perintah 
+                    loop=”true”, dan volume dapat diatur dengan nilai dimulai dari 1 sampai dengan 100 
+                    ( nilai default 50)</p>
+                <img src="img/Capture5.JPG" width=600 height=110 alt="gambarku">
+                <p>Contoh :</p>
+                <p>< BGSOUND SRC="mother.mid" LOOP=5></p>
+                <p>Perintah bgsound tidak dapat bekerja pada beberapa browser.</p>
+                <h2><section id="Video">3. Menampilkan Video</section></h2>
+                <img src="img/Capture3.JPG" width=900 height=150 alt="gambarku">
+                <p>Contoh :</p>
+                <p>< embed src="helloworld.swf" type="application/x-shockwave-flash" width="200" height="200"></p>
+                <p>Contoh tag video</p>
+                <p>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"></p>
+                <p>< HTML></p>
+                <p>< HEAD></p>
+                <p>< TITLE> New Document < /TITLE></p>
+                <p>< META NAME="Generator" CONTENT="EditPlus"></p>
+                <p>< META NAME="Author" CONTENT=""></p>
+                <p>< META NAME="Keywords" CONTENT=""></p>
+                <p>< META NAME="Description" CONTENT=""></p>
+                <p>< /HEAD></p>
+                <p>< BODY></p>
+                <p>< video width="400" controls></p>
+                <p>< source src="video.mp4" type="video/mp4"></p>
+                <p>< source src="video1.mp4" type="video/ogg"></p>
+                <p>Browser anda tidak support video pada HTML5.</p>
+                <p>< /video></p>
+                <p>< p></p>
+                <p>Hasil tampilan Video</p>
+                <p>< /p></p>
+                <p>< /body></p>
+                <p></html></p>
+                <p>Tampilan browser tag Video :</p>
+                <video width="400" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video1.ogg" type="video/ogg">
+                    Browser anda tidak support video pada HTML5.
+                   </video>
+                <p>Gambar 14 Tampilan tag video</p>
+                <h2>Menampilkan Foto atau gambar pada Tab atau di depan alamat URL</h2>
+                <p>Favicon adalah icon yang terdapat pada address bar atau tab bar pada web browser. Cara membuat favicon:</p>
+                <p>a. Siapkan ukuran gambar 32x32 dengan format jpg, png, gif dan bmp (silakanpilihsalah satu)</p>
+                <p>b. Jalankan http://tools.dynamicdrive.com/favicon/</p>
+                <p>c. Klik tombol browse untuk memilih file gambar telah disiapkan</p>
+                <p>d. Klik tombol create icon</p>
+                <p>e. Klik download favicon, untuk menyimpan gambar</p>
+                <p>f. Ketik < link rel=”shortcut icon” href=”image/favicon.ico”> letakkan pada bagian < head></p>
+                <p>Latihan Multimedia :</p>
+                <p>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"></p>
+                <p>< HTML></p>
+                <p>< HEAD></p>
+                <p>< TITLE>Penggunaan Multimedia< /TITLE></p>
+                <p>< META NAME="Generator" CONTENT="EditPlus"></p>
+                <p>< META NAME="Author" CONTENT="endar nirmala"></p>
+                <p>< META NAME="Keywords" CONTENT="distance learning"></p>
+                <p>< META NAME="Description" CONTENT="pembelajaran on-line"></p>
+                <p>< /HEAD></p>
+                <p>< BODY></p>
+                <p>< img src="image/banner.gif" width= "600" height ="100" Alt="mybanner" align="center" title="banner">< br></p>
+                <p>< embed src="musik/mother.mp3" width="100" height="20" autoplay="false" hidden="false" loop="true" volume="30">< /embed></p>
+                <p>< embed src="musik/i swear.mp3" width="100" height="20" autoplay="true" hidden="false" loop="true" volume="30">< /embed></p>
+                <p>< embed src="musik/i just call.mp3" width="100" height="20" autoplay="true" hidden="false" loop="true" volume="30">< /embed>< br></p>
+                <p>< embed src="video/pagiraya.mp4" width="300" height="250" autoplay="true" hidden="false" loop="false" volume="30">< /embed></p>
+                <p>< /BODY></p>
+                <p>< /HTML></p>
+                <p>Tampilan Browser</p>
+                <img src="img/banner.JPG" width= "600" height ="150" Alt="mybanner" allign="center" title="banner">
+                <br>
+                <br>
+                <embed src="musik/Ungu - Penghuni Surga SejatiMu.mp3" width="200" height="60" autoplay="true" hidden="false" loop="true" volume="30"></embed>
+                <embed src="musik/ONE OK ROCK_ Renegades [OFFICIAL VIDEO].mp3" width="200" height="60" autoplay="true" hidden="false" loop="true" volume="30"></embed>
+                <embed src="musik/The Beatles - Hey Jude.mp3" width="200" height="60" autoplay="true" hidden="false" loop="true" volume="30"></embed>
+                <br>
+                <br>
+                <embed src="video/pagiraya.mp4" width="300" height="250" autoplay="true" hidden="false" loop="false" volume="30"></embed>
+                <p>Gambar 15 Tampilan latihan Multimedia</p>
+                <h2>HTML5 format video yang dikenal adalah : MP4, WebM, dan Ogg.</h2>
+                <p>Tabel 1 Browser yang mendukung format Video</p>
+                <img src="img/table1.JPG" width= "800" height ="200" Alt="mybanner" allign="center" title="banner">
+                <p>< !DOCTYPE html> </p>
+                <p>< html></p>
+                <p>< body> </p>
+                <p>< body> </p>
+                <p>< button onclick="tekanPause()">Play/Pause< /button></p>
+                <p>< button onclick="menjadiBig()">Big< /button></p>
+                <p>< button onclick="menjadiSmall()">Small< /button></p>
+                <p>< button onclick="menjadiNormal()">Normal< /button></p>
+                <p>< br>< br></p>
+                <p>< video id="video" width="430"></p>
+                <p>< video id="video" width="430"></p>
+                <p>< source src="VideoBB.ogg" type="video/ogg"></p>
+                <p>Browser anda tidak support video HTML 5.</p>
+                <p>< /video></p>
+                <p>< /div></p>
+                <p>< script></p>
+                <p>var VideoAku = document.getElementById("video"); </p>
+                <p>function tekanPause() { </p>
+                <p>if (VideoAku.paused)</p>
+                <p>VideoAku.play(); </p>
+                <p>else </p>
+                <p>VideoAku.pause();</p>
+                <p>} </p>
+                <p>function menjadiBig() {</p>
+                <p>VideoAku.width = 560; </p>
+                <p>} </p>
+                <p>function menjadiSmall() {</p>
+                <p>VideoAku.width = 320; </p>
+                <p>} </p>
+                <p>function menjadiNormal() {</p>
+                <p>function menjadiNormal() {</p>
+                <p>} </p>
+                <p>< /script> </p>
+                <p>< /body> </p>
+                <p>< /html></p>
+                <p>Tampilan browser :</p>
+                <div style="text-align:center"> 
+                <button onclick="tekanPause()">Play/Pause</button> 
+                <button onclick="menjadiBig()">Big</button>
+                <button onclick="menjadiSmall()">Small</button>
+                <button onclick="menjadiNormal()">Normal</button>
+                <br><br>
+                <video id="video" width="430">
+                <video src="video/video" type="video/">
+                <source src="VideoBB.ogg" type="video/ogg">
+                Browser anda tidak support video HTML 5.
+                </video>
+                </div> 
+                <script> 
+                var VideoAku = document.getElementById("video"); 
+                function tekanPause() { 
+                 if (VideoAku.paused) 
+                 VideoAku.play(); 
+                 else 
+                 VideoAku.pause(); 
+                } 
+                function menjadiBig() { 
+                 VideoAku.width = 560; 
+                } 
+                function menjadiSmall() { 
+                 VideoAku.width = 320; 
+                } 
+                function menjadiNormal() { 
+                 VideoAku.width = 430; 
+                } 
+                </script>
+                <img src="img/vidio.JPG" width= "800" height ="200" Alt="mybanner" allign="center" title="banner">                
+                <p>Gambar 16 Tampilan video HTML5</p>
+                <p>Perintah bgsound tidak dapat bekerja pada beberapa browser.</p>                
+                </div>
+                </section>
+                </section>
+<!-- AKHIR MENAMPILKAN GAMBAR, SUARA DAN VIDEO-->
+
+<!-- AWAL HYPERLINK-->
+<section id="HYPERLINK">
+        <main class="content">
+            <section class="hero">
+            <div class="hero-content">
+                <h1>HYPERLINK DI HTML</h1>   
+                <p>Hyperlink dalam HTML memiliki kemampuan untuk melakukan link dari suatu gambar atau teks menuju halaman lain atau bagian lain dalam suatu halaman web</p>
+                <p>Hyperlink terdiri dari :</p>
+                <h2><section id="relative">1. Link relative</section></h2>
+                <p>Melakukan link dari satu halaman ke halaman lain pada website yang sama.</p>
+                <img src="img/Capture6.JPG" width= "600" height ="80" Alt="mybanner" allign="center" title="banner">
+                <p>Contoh :</p>
+                <p>< a href=”perpustakaan.html”>Ruang Baca< /a></p>
+                <h2><section id="absolute">2. Link absolute</section></h2>
+                <p>Melakukan link ke halaman web yang berada pada website lain</p>
+                <img src="img/Capture7.JPG" width= "600" height ="80" Alt="mybanner" allign="center" title="banner">
+                <p>Contoh : </p>
+                <p>< a href="http://www.google.com">Google< /a></p>
+                <h2><section id="halaman">3. Link pada halaman yang sama (link Anchor)</section></h2>
+                <p>Jenis link ini digunakan ketika halaman web panjang, sehingga harus 
+                    melakukan scroll berulang-ulang untuk membaca informasi dihalaman web 
+                    tersebut. Untuk memudahkan navigasi dalam penelusuran halaman web antar 
+                    bagian perlu dibuat link dan memberi nama sebagai alamat tujuan. </p>
+                    <img src="img/Capture8.JPG" width= "600" height ="80" Alt="mybanner" allign="center" title="banner">
+                <p>Contoh :</p>
+                <p>< a href=”#pengenalan”>Pengenalan< /a></p>
+                <p>..............</p>
+                <p>..............</p>
+                <p>< a name=”pengenalan”></p>
+                <p>..............</p>
+                <p>< /a></p>
+                <h2><section id="email">4. Link Email</section></h2>
+                <p>Link yang menghubungkan ke alamat email.</p>
+                <img src="img/Capture9.JPG" width= "600" height ="80" Alt="mybanner" allign="center" title="banner">
+                <p>Contoh :</p>
+                <p><a href=”mailto:endar_nirmala@yahoo.com”>kirim email</a></p>
+                <h2>Latihan 1</h2>
+                <p>< HTML></p>
+                <p>< HEAD></p>
+                <p>< TITLE> Contoh Hyperlink < /TITLE></p>
+                <p>< /HEAD></p>
+                <p>< BODY></p>
+                <p>< pre></p>
+                <p>< hr color="blue" size=3 width=50% align="left">< font size= 4 color="red">< a 
+                    href="home.html">Home< /a> | < a href="profil.html">Profil< /a> |
+                    < a href="about.html">About< /a> | < a href="galery.html">Gallery< /a> |
+                    < a href="kontak.html">Kontak< /a>< /font>
+                    < hr color="blue" size=3 width=50% align="left">
+                    < font size=3>Assalammualaikum.Wr.Wb.
+                    Apakabar semua. Salam kenal ini adalah web perdanaku. Web ini berisi informasi 
+                    tentang kegemaranku. < br> Semoga web ini dapat menginspirasi Anda pada 
+                    waktu liburan. < a href="http://www.google.com">google< /a>
+                    Silakan hubungi saya jika ada yang ingin didiskusikan < a 
+                    href="mailto:endarnirmala.gmail.com">email< /a>< /p>
+                <p>< /font></p>
+                <p>< /pre></p>
+                <p>< /BODY></p>
+                <p>< /HTML></p>
+                <p>Tampilan browser:</p>
+                <BODY>
+                    <pre>
+                    <hr color="blue" size=3 width=50% align="left"><font size= 4 color="red"><a href="home.html">Home</a> | <a href="profil.html">Profil</a> | <a href="about.html">About</a> | <a href="galery.html">Gallery</a> | <a href="kontak.html">Kontak</a></font><hr color="blue" size=3 width=50% align="left">
+                    <font size=3>Assalammualaikum.Wr.Wb.
+                    Apakabar semua. Salam kenal ini adalah web perdanaku. Web ini berisi informasi tentang kegemaranku.
+                    Semoga web ini dapat menginspirasi Anda pada waktu liburan. <a href="http://www.google.com">google</a>
+                    Silakan hubungi saya jika ada yang ingin didiskusikan <a href="rifqyshilahuddin.gmail.com">email</a>
+                    </font>
+                    </pre>
+                </BODY>
+                <p>Gambar 17 Tampilan Hyperlink</p>
+                <h2><section id="kesimpulan">Kesimpulan</section></h2>
+                <p>Demikianlah cara membuat sisipkan gambar, audio, video, Hyperlink di HTML dengan Visual Studio Code dan dengan contoh sederhana ini Anda dapat mengembangkan sesuai dengan kreatifitas masing-masing. </p>                  
+            </div>
+            </section>
+            <li class="nav-item">
+                <a class="nav-link" href="#MENAMPILKAN GAMBAR, SUARA DAN VIDEO">HOME</a>
+              </li>             
+            <br></main>      
+        <div class="footer">
+            <footer>
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="img/instagram.png"></img></a><p>Instagram</p></li>
+                <li><a href="https://web.facebook.com/"><img src="img/facebook.png"></img></a><p>Facebook</p></li>
+                <li><a href="https://twitter.com/i/flow/login"><img src="img/twitter.png"></img></a><p>Twitter</p></li>
+                <li><a href="https://web.telegram.org/k/"><img src="img/telegram.png"></img></a><p>Telegram</p></li>               
+            </ul>
+            </footer>
+        </div>
+    </div>
+</section>
+<!-- AKHIR HYPERLINK-->
+</body>
+</html>
